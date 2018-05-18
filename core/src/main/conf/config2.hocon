@@ -1,0 +1,3 @@
+port=8002
+replicas=[]
+master=false

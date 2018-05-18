@@ -1,0 +1,11 @@
+group 'dist-ds-store'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+
