@@ -1,9 +1,7 @@
 package house.service;
 
-import house.api.cluster.Message;
 import house.exception.ApplicationException;
 
-import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
@@ -18,30 +16,37 @@ public class ReplicaClient {
   
   private WebTarget baseTarget;
   private ExecutorService executorService;
-  
-  public ReplicaClient(String uri) {
+  private int id;
+
+  public ReplicaClient(int id, String uri) {
     baseTarget = ClientBuilder.newClient().target(uri);
     executorService = Executors.newSingleThreadExecutor();
+    this.id = id;
   }
-  
-  public void sendMessage(Message message) {
+
+  public int getId() {
+    return id;
+  }
+
+  public Future<Response> sendMessage(Packet packet) {
     Callable<Response> callable = () -> {
-      WebTarget target = baseTarget.path("message");
+      WebTarget target = baseTarget.path("cluster/packet");
   
       Response response =
             target
               .request()
               .accept(MediaType.APPLICATION_JSON)
-              .post(Entity.entity(message, MediaType.APPLICATION_JSON));
+              .post(Entity.entity(packet, MediaType.APPLICATION_JSON));
   
       if (response.getStatus() != 200) {
         throw new ApplicationException(
-            String.format("Failed to send %s to uri", message.getType())
+            String.format("Failed to send %s to replica %d", packet.getType(), packet.getReplicaId())
         );
       }
       return response;
     };
     
     Future<Response> ack = executorService.submit(callable);
+    return ack;
   }
 }

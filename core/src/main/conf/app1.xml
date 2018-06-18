@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" monitorInterval="30" shutdownHook="disable">
+    <Properties>
+        <Property name="log-path">/Users/user/workspace/collector/logs</Property>
+        <Property name="component">app1</Property>
+        <Property name="error-file">${component}-error</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="file-log" fileName="${log-path}/${component}.log"
+                     filePattern="${log-path}/${component}-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+        <Console name="console" target="SYSTEM_OUT">
+            <filters>
+                <ThresholdFilter level="INFO"/>
+            </filters>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] %c{1} - %msg%n"/>
+        </Console>
+        <RollingFile name="error-log" fileName="${log-path}/${error-file}.log"
+                     filePattern="${log-path}/${error-file}-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="house" level="debug">
+        </Logger>
+        <Logger name="Error" level="debug" additivity="false">
+            <appender-ref ref="error-log" />
+        </Logger>
+        <Root level="debug">
+            <appender-ref ref="console"/>
+            <appender-ref ref="file-log"/>
+        </Root>
+    </Loggers>
+</Configuration>

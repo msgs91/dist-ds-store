@@ -1,3 +1,6 @@
+id=2
 port=8002
-replicas=[]
+replicas=["http://localhost:8001", "0.0.0.0:8002", "http://localhost:8003"]
 master=false
+replicationStrategy="twoPhaseCommit"
+wal-dir="/tmp/app2"

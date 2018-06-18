@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_ABSENT)
-public class Message {
+public class MessageOld {
   
   public static class MessageType {
     public static final String REPLICATE_KV = "replicate_kv";
@@ -17,9 +17,9 @@ public class Message {
   private String meta;
   private String version;
   
-  public Message() {}
+  public MessageOld() {}
   
-  public Message(String type, String data, String meta, String version) {
+  public MessageOld(String type, String data, String meta, String version) {
     this.type = type;
     this.data = data;
     this.meta = meta;

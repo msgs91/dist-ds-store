@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":core:test" external.linked.project.path="$MODULE_DIR$/../../../core" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="dist-ds-store" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
-    <output-test url="file://$MODULE_DIR$/../../../core/build/classes/test" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output-test url="file://$MODULE_DIR$/../../../core/out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../core/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../../core/src/test/java" isTestSource="true" />
@@ -19,7 +19,7 @@
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.ext:jersey-bean-validation:2.25.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.7" level="project" />
-    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:2.18.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:2.19.0" level="project" />
     <orderEntry type="library" name="Gradle: io.rest-assured:rest-assured:3.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-jetty:2.25.1" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-common:2.25.1" level="project" />
@@ -40,8 +40,8 @@
     <orderEntry type="library" name="Gradle: javax.el:javax.el-api:2.2.4" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.web:javax.el:2.2.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.7" level="project" />
-    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.8.5" level="project" />
-    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy-agent:1.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy-agent:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy:2.4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-xml:2.4.12" level="project" />
