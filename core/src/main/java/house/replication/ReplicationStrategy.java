@@ -16,4 +16,5 @@ public interface ReplicationStrategy {
   Optional<String> get(String key);
 
   Long getNextTransactionId();
+  
 }

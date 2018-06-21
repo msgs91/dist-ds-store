@@ -1,17 +1,18 @@
 package house.service;
 
 public class Data {
-    String type;
-    String value;
-    int version;
-
-    public Data() {}
-
-    public Data(String type, String value, int version) {
-        this.type = type;
-        this.value = value;
-        this.version = version;
-    }
+  String type;
+  String value;
+  int version;
+  
+  public Data() {
+  }
+  
+  public Data(String type, String value, int version) {
+    this.type = type;
+    this.value = value;
+    this.version = version;
+  }
 
     public String getType() {
         return type;

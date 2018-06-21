@@ -2,6 +2,7 @@ package house.store;
 
 import house.AppConfig;
 import house.exception.ApplicationException;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,10 +11,8 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Slf4j
 public class InMemoryStore {
-
-  private static Logger logger = LoggerFactory.getLogger(InMemoryStore.class);
-
   private Map<String, String> kv;
   private AppConfig config;
   private AtomicLong nextTransactionId;
@@ -36,7 +35,7 @@ public class InMemoryStore {
     }
     String message =
             String.format("Given transaction id %d is not equal to next transaction id %d", transactionId, nextTransactionId.get());
-    logger.warn(message);
+    log.warn(message);
     throw new ApplicationException(message);
   }
 

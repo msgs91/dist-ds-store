@@ -1,6 +1,7 @@
 package house.api.client;
 
 import house.service.KVService;
+import house.service.ServiceResponse;
 
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
@@ -42,8 +43,12 @@ public class StoreResource {
         URI uri = new URI(String.format("%s/%s", uriInfo.getBaseUri().toString(), "store"));
         response = Response.temporaryRedirect(uri).build();
       } else {
-        service.put(kv);
-        response = Response.ok().entity(new KV(kv.getKey(), kv.getValue())).build();
+        ServiceResponse serviceResponse = service.put(kv);
+        if (serviceResponse.isError()) {
+          response = Response.status(503).entity(serviceResponse).build();
+        } else {
+          response = Response.ok().entity(new KV(kv.getKey(), kv.getValue())).build();
+        }
       }
       return response;
     } catch (Exception e) {

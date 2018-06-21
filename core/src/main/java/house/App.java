@@ -46,7 +46,7 @@ public class App {
   private static ReplicationStrategy getReplicationStrategy(AppConfig config, Replicator replicator) {
     switch (config.getReplicationStrategy()) {
       case "bestEffort" :
-        return new BestEffortReplicationStrategy(replicator, new InMemoryStore(config));
+        return new BestEffortReplicationStrategy(config, replicator, new InMemoryStore(config));
       case "twoPhaseCommit" :
         return new TwoPhaseCommitStrategy(config, replicator, new InMemoryStore(config));
       default:
