@@ -1,19 +1,23 @@
 package house.service;
 
+import com.google.common.util.concurrent.SettableFuture;
 import house.replication.ReplicaResponse;
-import lombok.extern.java.Log;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
+import javax.validation.constraints.NotNull;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 
+import static house.service.ReplicaClient.State.DOWN;
 import static house.service.ReplicaClient.State.UP;
 
 @Slf4j
@@ -24,20 +28,44 @@ public class ReplicaClient {
     DOWN,
     STARTING;
   }
-
+  
+  @Getter
+  @Setter
+  @AllArgsConstructor
+  class QueueItem {
+    @NotNull Packet packet;
+    @NotNull SettableFuture<ReplicaResponse> response;
+  }
+  
   private WebTarget baseTarget;
-  private ExecutorService executorService;
+  ArrayBlockingQueue<QueueItem> queue;
+  
   private int id;
   
   private volatile State state;
   
   public ReplicaClient(int id, String uri) {
     baseTarget = ClientBuilder.newClient().target(uri);
-    executorService = Executors.newSingleThreadExecutor();
     this.id = id;
     this.state = State.STARTING;
+    this.queue = new ArrayBlockingQueue<>(10);
+    
+    new Thread(this::sendAndRespond, String.format("ReplicaClient-%d", this.id)).stop();
     checkHealth();
   }
+  
+  public Future<ReplicaResponse> put(Packet packet) {
+    SettableFuture<ReplicaResponse> promise = SettableFuture.create();
+    QueueItem item = new QueueItem(packet, promise);
+    try {
+      queue.put(item);
+    } catch (InterruptedException e) {
+      log.error(e.getMessage(), e);
+    }
+    return promise;
+  }
+  
+  
   
   public int getId() {
     return id;
@@ -57,12 +85,15 @@ public class ReplicaClient {
     return send(packet);
   }
   
-  private Future<ReplicaResponse> send(Packet packet) {
-    Callable<ReplicaResponse> callable = () -> {
-      log.info(String.format("Sending %d to replica %d", packet.getTransactionId(), id));
-      ReplicaResponse replicaResponse;
-      WebTarget target = baseTarget.path("cluster/packet");
+  private void sendAndRespond() {
+    while (state != DOWN) {
+      SettableFuture<ReplicaResponse> replicaResponseFuture;
       try {
+        QueueItem item = queue.take();
+        replicaResponseFuture = item.getResponse();
+        Packet packet = item.getPacket();
+        log.info(String.format("Sending %d to replica %d", packet.getTransactionId(), id));
+        WebTarget target = baseTarget.path("cluster/packet");
         Response response =
           target
             .request()
@@ -73,23 +104,23 @@ public class ReplicaClient {
           String msg = String.format("Failed to replicate to replica %d", id);
           log.error(msg);
         }
-        replicaResponse = new ReplicaResponse(id, response.getStatus());
-      } catch (Exception e ) {
+        replicaResponseFuture.set(new ReplicaResponse(id, response.getStatus()));
+      } catch (InterruptedException e) {
+      
+      } catch (Exception e) {
         log.error(String.format("Failed to connect to replica %d", id), e);
-        replicaResponse = new ReplicaResponse(id, 503);
+        replicaResponseFuture.set(new ReplicaResponse(id, 503));
+        
       }
-      this.state = State.DOWN;
-      return replicaResponse;
-    };
-    
-    return executorService.submit(callable);
+      this.state = DOWN;
+    }
   }
   
   public State checkHealth() {
     WebTarget target = baseTarget.path("cluster/health");
     Response response = target.request().get();
     if (response.getStatus() != 200) {
-      this.state = State.DOWN;
+      this.state = DOWN;
     } else {
       this.state = State.STARTING;
     }

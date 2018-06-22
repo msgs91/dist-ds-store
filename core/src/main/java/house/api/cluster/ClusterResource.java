@@ -8,6 +8,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.container.AsyncResponse;
+import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.Response;
 
 @Path("cluster")
@@ -28,15 +30,12 @@ public class ClusterResource {
     @POST
     @Path("packet")
     @Produces("application/json")
-    public Response sendPacket(Packet packet) {
+    public void sendPacket(@Suspended AsyncResponse response, Packet packet) {
         ClusterResponse clusterResponse = service.onPacket(packet);
-        Response response;
-
         if (!clusterResponse.isError()) {
-            response = Response.ok().entity(clusterResponse.getEntity()).build();
+            Response.ok().entity(clusterResponse.getEntity()).build();
         } else {
             response = Response.status(503).build();
         }
-        return response;
     }
 }
