@@ -13,7 +13,7 @@ pull for the second could result in data loss.
 
 Scenario
 
-Master accepts writes, say at transaction id 1000
+Master accepts writes, say at transaction replicaId 1000
 
 Slave pulls transactions starting from 1 until 1000. 
 

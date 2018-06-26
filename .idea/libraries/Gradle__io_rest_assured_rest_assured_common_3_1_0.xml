@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/e2ba9ea9a11d3508aca8b46d65888581ea0cf4e3/rest-assured-common-3.1.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/f1dcab37d932b3b5de31ba2f7580cbb549a81f55/rest-assured-common-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/62e6f6f545ef1442f103a2e47ea7f28d5134a12b/rest-assured-common-3.1.0-sources.jar!/" />
     </SOURCES>

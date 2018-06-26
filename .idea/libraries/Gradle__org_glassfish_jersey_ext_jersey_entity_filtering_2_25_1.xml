@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/4a5805060f796ec2c9bb1ba0ce91c1db6d889524/jersey-entity-filtering-2.25.1.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/1bdb6deae2008a8cc6fb10e41e769d6fbf004e9/jersey-entity-filtering-2.25.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/5f65cbca3bd34f96718db4e4b6ecfe29320ae5ad/jersey-entity-filtering-2.25.1-sources.jar!/" />
     </SOURCES>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" monitorInterval="30" shutdownHook="disable">
     <Properties>
-        <Property name="log-path">/Users/user/workspace/collector/logs</Property>
+        <Property name="log-path">/home/gana/workspace/logs</Property>
         <Property name="component">app1</Property>
         <Property name="error-file">${component}-error</Property>
     </Properties>

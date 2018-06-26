@@ -2,16 +2,22 @@ package house.replication;
 
 public class ReplicaResponse {
 
-    int id;
-    int response;
+    private int replicaId;
+    private int response;
+    private Long transactionId;
 
-    public ReplicaResponse(int id, int response) {
-        this.id = id;
+    public ReplicaResponse(Long transactionId, int replicaId, int response) {
+        this.transactionId = transactionId;
+        this.replicaId = replicaId;
         this.response = response;
     }
 
-    public int getId() {
-        return id;
+    public int getReplicaId() {
+        return replicaId;
+    }
+
+    public Long getTransactionId() {
+        return transactionId;
     }
 
     public int getResponse() {

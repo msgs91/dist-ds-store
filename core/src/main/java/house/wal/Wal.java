@@ -1,11 +1,14 @@
 package house.wal;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import house.AppConfig;
+import house.service.Packet;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 public class Wal implements ILog {
@@ -13,7 +16,7 @@ public class Wal implements ILog {
   private AppConfig config;
   private FileOutputStream os;
   private BufferedWriter writer;
-  
+
   public Wal(AppConfig config) throws IOException {
     this.config = config;
       os = new FileOutputStream(getFile(), true);
@@ -53,7 +56,7 @@ public class Wal implements ILog {
     }
     return lines;
   }
-  
+
   private File getFile() {
     StringBuilder sb = new StringBuilder(config.getWalDir());
     return new File(sb.append("/wal.log").toString());

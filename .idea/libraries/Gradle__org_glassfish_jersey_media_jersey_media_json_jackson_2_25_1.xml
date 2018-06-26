@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/19d1e4276eb7b6386640c344d9e5c01eba7eae5d/jersey-media-json-jackson-2.25.1.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/a5aa2aa38829005fecc8b803674bbebdd34368de/jersey-media-json-jackson-2.25.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/744ff5bed40f3a402eb4a664e0b82f433a3bb5f5/jersey-media-json-jackson-2.25.1-sources.jar!/" />
     </SOURCES>

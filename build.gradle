@@ -1,8 +1,16 @@
 group 'dist-ds-store'
 version '1.0-SNAPSHOT'
+apply plugin: 'idea'
 
 repositories {
     mavenCentral()
+}
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
 }
 
 dependencies {

@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output/>
+    <orderEntry type="inheritedJdk"/>
+    <content url="file://$MODULE_DIR$/">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <excludeFolder url="file://$MODULE_DIR$/build"/>
+      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+    </content>
+    <orderEntry type="sourceFolder" forTests="false"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.2/d6ac0ce079f114adce620f2360c92a70b2cb36dc/config-1.3.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.2/3f4041d82299c0945b9d45c43823f10d6d3e20c1/config-1.3.2-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.2/a22dda7d62b800b297c1c59de90d48992d8119b1/config-1.3.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1/426a0862406536e690c7caa8bb6ed32191986fac/javax.ws.rs-api-2.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1/db39e809544513e51fe375530c0ebceeeca0dfba/javax.ws.rs-api-2.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1/b693d737250f57da3bbc0fbfccf6917de18ae200/javax.ws.rs-api-2.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.25.1/276e2ee0fd1cdabf99357fce560c5baab675b1a2/jersey-server-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.25.1/5c2898bb39cef2a291fe536253117e086574d08a/jersey-server-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.25.1/f0c3629e116829bb892a86d1fabfbc3e18550b7c/jersey-server-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.25.1/4d563b1f93352ee9fad597e9e1daf2c6159993c6/jersey-client-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.25.1/8a027a1702dea2345c1457ef80609c0026183276/jersey-client-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.25.1/753404f68c295f40f25cdda40b05be518ede99b3/jersey-client-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-jetty-http/2.25.1/f880be688b57ef6d1fa317317da4adef687bfba5/jersey-container-jetty-http-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-jetty-http/2.25.1/5a3e40472609653ff2df81c7e609d6033728b78d/jersey-container-jetty-http-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-jetty-http/2.25.1/880be8109bb40cdcfaeb758d01aed7b0aa957555/jersey-container-jetty-http-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/19d1e4276eb7b6386640c344d9e5c01eba7eae5d/jersey-media-json-jackson-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/a5aa2aa38829005fecc8b803674bbebdd34368de/jersey-media-json-jackson-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/744ff5bed40f3a402eb4a664e0b82f433a3bb5f5/jersey-media-json-jackson-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.25.1/1971927d79cad0ad2b5a3bfda24967748a2023d/jersey-bean-validation-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.25.1/b7f1b00bc846fa9c31bd994aa33520d6906011ba/jersey-bean-validation-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.25.1/7943a02b565c8c425ac4c444e4d2e53b413f211a/jersey-bean-validation-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/24.1.1-jre/2e3014320a8005e3f3c1800cb246ed42db8cab81/guava-24.1.1-jre.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/24.1.1-jre/28552af1af10dbb23506a19f413696400557bf11/guava-24.1.1-jre-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/24.1.1-jre/9cd4fb296a2c098839bf029de31432d737ab20ad/guava-24.1.1-jre-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/e555426550f54284fefb09065f2123a1d9be0b73/lombok-1.16.22.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/47522ce011248e111d0f4588219fc6706e35a4/lombok-1.16.22-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/38bc39b0677b208aeacbdc2d30e8499663687373/lombok-1.16.22-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.7/a3f2b4e64c61a7fc1ed8f1e5ba371933404ed98a/log4j-core-2.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.7/fa2791a239d53947c6ff981ed37cf756dec240b8/log4j-core-2.7-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.7/5dc93d7040d2c19b84335b139c16c93473c5899/log4j-core-2.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.7/382b070836b8940a02d28c936974db95e9bfc3a4/log4j-slf4j-impl-2.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.7/d9169e5727e50401813b8f601dbf7eec7375191b/log4j-slf4j-impl-2.7-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.7/b585a7ecde86df1d4f2be1e0fe0519539c79fd4f/log4j-slf4j-impl-2.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.25.1/2438ce68d4907046095ab54aa83a6092951b4bbb/jersey-common-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.25.1/fa82c2ec7b2e85a07fd9dc77238de4415223fa7c/jersey-common-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.25.1/909e99b31725e867874bd156c61d6a3c19e5ce4f/jersey-common-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.25.1/d7da0beeed5614a3bfd882662faec602699e24b/jersey-media-jaxb-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.25.1/fb774080b38fe70a6da3582502c5c5a61dfd8f24/jersey-media-jaxb-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.25.1/4472b847fb1929f9756bf1e3711917e215005adb/jersey-media-jaxb-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/1064ee6b28b926dfa355f9db146a33d1111a7bf1/javax.annotation-api-1.2-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/ad18a02db08eaee697f812e333f692fc51129e4a/javax.annotation-api-1.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0-b32/6a576c9653832ce610b80a2f389374ef19d96171/hk2-api-2.5.0-b32.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0-b32/7d4acfaa8068259ecb826911a6f201aa176be52a/hk2-api-2.5.0-b32-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0-b32/fa4f62a464d7d65b2a3d33035bb5606792273556/hk2-api-2.5.0-b32-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.5.0-b32/b2fa50c8186a38728c35fe6a9da57ce4cc806923/javax.inject-2.5.0-b32.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.5.0-b32/a99df854c7f67ebd3f0f2c69b07529440efc2d0e/javax.inject-2.5.0-b32-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.5.0-b32/55e665280bbf8ed63c301959e130cfe335637f31/javax.inject-2.5.0-b32-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0-b32/195474f8ad0a8d130e9ea949a771bcf1215fc33b/hk2-locator-2.5.0-b32.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0-b32/afa851bb4b4b69307828569c983ad3ea5b7f2691/hk2-locator-2.5.0-b32-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0-b32/9ad9ce916e9cae42f3dd457d863d7faf3a5b0a2e/hk2-locator-2.5.0-b32-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/9f3d019c10d629fa8259af61ac83e88bb186c4e9/validation-api-1.1.0.Final-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.2.14.v20151106/70b22c1353e884accf6300093362b25993dac0f5/jetty-server-9.2.14.v20151106.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.2.14.v20151106/d91fc1b1bb39d53cb495a9e372ef33bfeae080cf/jetty-server-9.2.14.v20151106-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.2.14.v20151106/5ed9c66cb7dce7abb3738d686950baf19b2e65e1/jetty-server-9.2.14.v20151106-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.14.v20151106/57e00b912ae0c35859ac81594a996007706a0b/jetty-util-9.2.14.v20151106.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.14.v20151106/44412397594089eac5deb1d6adbbc8748bc9088b/jetty-util-9.2.14.v20151106-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.14.v20151106/a8c89e0697fb2c9fe7459a879e240b31bcbf1103/jetty-util-9.2.14.v20151106-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.2.14.v20151106/8909d62fd7e28351e2da30de6fb4105539b949c0/jetty-continuation-9.2.14.v20151106.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.2.14.v20151106/47ca1ec041315aed985a49251647e944da81d209/jetty-continuation-9.2.14.v20151106-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.2.14.v20151106/d35fe4d36f663b44b51b1ca10e5efd4297ffa0b5/jetty-continuation-9.2.14.v20151106-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/4a5805060f796ec2c9bb1ba0ce91c1db6d889524/jersey-entity-filtering-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/1bdb6deae2008a8cc6fb10e41e769d6fbf004e9/jersey-entity-filtering-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/5f65cbca3bd34f96718db4e4b6ecfe29320ae5ad/jersey-entity-filtering-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.4/6c0ceb3c9fed2e225b0cc2a45533574df393f606/jackson-jaxrs-base-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.4/93122c1be9c73431d9f53eeb5f7b97dad1d6e505/jackson-jaxrs-base-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.4/30827ed4766057952c9f17a15df16f16c99085e7/jackson-jaxrs-base-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.4/839366ece31829a19cb15719b2b54a3f9f91148d/jackson-jaxrs-json-provider-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.4/f91610fae958d4dd3fa31ab59dc6822bbe25e618/jackson-jaxrs-json-provider-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.4/b86c8a3f85be0a399fd22ab3e742bcfb5e4df5e0/jackson-jaxrs-json-provider-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.4/de3570327cf8d1d4f37920535c51a1f74225a6de/jackson-annotations-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.4/18bfd70091f1c78c769e9bb0fd9668434bb10472/jackson-annotations-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.4/be29f3af1b8864b0589834c05bec9d7108d4713b/jackson-annotations-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.1.3.Final/334d46a93cf095160ce06d8382594b904933c808/hibernate-validator-5.1.3.Final.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.1.3.Final/4390a6a9cb81b0a598424877602265605953c042/hibernate-validator-5.1.3.Final-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.1.3.Final/2bb7969a7c05ddd8474873981321cce43c688eb9/hibernate-validator-5.1.3.Final-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.el/javax.el-api/2.2.4/1287562cc3f0ff5439ded6f2949e73ce1c0edaab/javax.el-api-2.2.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.el/javax.el-api/2.2.4/d8fbfe3159a0cabf62c7954d9719f1a80f0c08cd/javax.el-api-2.2.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.el/javax.el-api/2.2.4/1c1af37c1534e17fc67288ed439829a267a1f79e/javax.el-api-2.2.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.el/2.2.4/a50914ff519682e185bca4385b4313b8c8a81775/javax.el-2.2.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.el/2.2.4/bde0490fb730e2dedca35d589131ecc1bb2ac7d9/javax.el-2.2.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.el/2.2.4/8fc376c408ccbdd533b70c4144fed08741f1ca4f/javax.el-2.2.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.0.0/fc89b03860d11d6213d0154a62bcd1c2f69b9efa/checker-compat-qual-2.0.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.0.0/74e101e1a06fb4744b298ec4067b73695b6f294e/checker-compat-qual-2.0.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.0.0/eb7f7d588d0aef07a2c89178053c2a9e4613947f/checker-compat-qual-2.0.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.3/39b109f2cd352b2d71b52a3b5a1a9850e1dc304b/error_prone_annotations-2.1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.3/28ea6f81741992c53c5f8030995604345606dd9d/error_prone_annotations-2.1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.3/990fe1fd48078a2befecdfcebcad8e6e1bd195a0/error_prone_annotations-2.1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/5d415cbe46a293283658196abdb9e6d06dc68ccf/j2objc-annotations-1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/1efdf5b737b02f9b72ebdec4f72c37ec411302ff/j2objc-annotations-1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/d90e19c7bc3a594aac2307bcfe9f2362ec4108ea/animal-sniffer-annotations-1.14-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/886474da3f761d39fcbb723d97ecc5089e731f42/animal-sniffer-annotations-1.14-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.7/8de00e382a817981b737be84cb8def687d392963/log4j-api-2.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.7/a8d3de3feb862fceb21beb1ae3d5e31f40451f8f/log4j-api-2.7-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.7/87b0c1c6bce3b1b251ba72464483e46cffaa1b5b/log4j-api-2.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.bundles.repackaged/jersey-guava/2.25.1/a2bb4f8208e134cf2cf71dfb8824e42942f7bd06/jersey-guava-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.bundles.repackaged/jersey-guava/2.25.1/eeb130898a7b7b146ce9a85f9434b4100105f29d/jersey-guava-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/4ed2b2d4738aed5786cfa64cba5a332779c4c708/osgi-resource-locator-1.0.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/a6d15475ace6ec17ded38a9f565b17b2cde36e8e/osgi-resource-locator-1.0.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/b5685f8eaa7d83351b185a82a92abcd1b8b87fc8/osgi-resource-locator-1.0.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0-b32/5108a926988c4ceda7f1e681dddfe3101454a002/hk2-utils-2.5.0-b32.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0-b32/46dcea1779d54c2725cceb4f16fbd3beb51fc372/hk2-utils-2.5.0-b32-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0-b32/6b4474b77b50234f978e9fecce87c030d64193f2/hk2-utils-2.5.0-b32-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32/6af37c3f8ec6f9e9653ec837eb508da28ce443cd/aopalliance-repackaged-2.5.0-b32.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32/219c752a51e8b9a3c6dddf9fbd257e910ed01df8/aopalliance-repackaged-2.5.0-b32-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32/51312ba9370f3b514cc95c5c2c77a224a1d7e9b9/aopalliance-repackaged-2.5.0-b32-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/c5fad80453edb961b12369141d7127746cf796f2/javassist-3.20.0-GA-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/d8fdc08a455bc0b28bc0bed1f0d032d935cee8e1/javassist-3.20.0-GA-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/7898c2d7d0779c852dea51cb75a446eeb932eb1b/javax.servlet-api-3.1.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.2.14.v20151106/699ad1f2fa6fb0717e1b308a8c9e1b8c69d81ef6/jetty-http-9.2.14.v20151106.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.2.14.v20151106/1c7981ba883ab1b9202603a93e7d3527159ea949/jetty-http-9.2.14.v20151106-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.2.14.v20151106/3c313d706ef3536f626294244fe6a79f152bbbe4/jetty-http-9.2.14.v20151106-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.14.v20151106/dfa4137371a3f08769820138ca1a2184dacda267/jetty-io-9.2.14.v20151106.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.14.v20151106/c2796bbea57ac95d693bf590ad1ca4fb82462691/jetty-io-9.2.14.v20151106-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.14.v20151106/921faa101835cc984faa3dbd2c04fa6b6d04ec28/jetty-io-9.2.14.v20151106-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.4/ca365c0817cc345ea831cae7c4e9b42a72b32281/jackson-core-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.4/d83026c461f77a752c2337290c31e53eab0aeb56/jackson-core-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.4/2b19a5be7b533aea3a4b7931ee518d5642c5c513/jackson-core-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/1c36c81e79cacdf48116afba8495e3393d267ba1/jackson-databind-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/83fb481127ed19fe9c183791fd1062b7e335649d/jackson-databind-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/2b4edfb6d6bad1710951837b4911eddd1415228f/jackson-databind-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.4/d2eec7cf6c4284f7d5f0b1a72dc7cfa9d6bb579d/jackson-module-jaxb-annotations-2.8.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.4/346b23957390bb7c51212cdd65142e8f118fa132/jackson-module-jaxb-annotations-2.8.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.4/6a1ff307ed6589bce931a41e06c6f1c566cee13a/jackson-module-jaxb-annotations-2.8.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.3.GA/64499e907f19e5e1b3fdc02f81440c1832fe3545/jboss-logging-3.1.3.GA.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.3.GA/ebe91975d5721dc0150a5975bdb24285e09248a9/jboss-logging-3.1.3.GA-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.3.GA/4d2c4df2c1a1b2d2f9201f6d580d7d19ccf8cbdf/jboss-logging-3.1.3.GA-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/434efef28c81162b17c540e634cffa3bd9b09b4c/classmate-1.0.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/c4b7a663a321db0515f1a37cc8029468757696c/classmate-1.0.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/da0cec0cf5fa28fba22e44700d72259e0225f2e4/classmate-1.0.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/70ec961c25111ed9015d1af77772d96383c2d238/javax.inject-1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/72e00d8dc052190c5d0aca77f9a9c5124ec3a1c1/slf4j-api-1.7.21-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/f285ac123f201fb4b028bac556928d7cf527ef48/slf4j-api-1.7.21-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.19.0/bc51dab3138afbd8517511cfb183dab731d8b1c4/mockito-core-2.19.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.19.0/ab7455348b2e4a7cbce29beb4a652e7fde7f198b/mockito-core-2.19.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.19.0/c7a731fe218c6202c74cc79656bcb8f3bd4dc539/mockito-core-2.19.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/3.1.0/8d6244fa070a8c3d19412d3c39b17ea536e36aba/rest-assured-3.1.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/3.1.0/573b4c2149ff634ca24840e817ba8ab1758491d0/rest-assured-3.1.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/3.1.0/c424903edc0544b846e7770518da9b93e09bc202/rest-assured-3.1.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework.providers/jersey-test-framework-provider-jetty/2.25.1/f774ab891c8c7c697fd7f613d51a37e7b7c73366/jersey-test-framework-provider-jetty-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework.providers/jersey-test-framework-provider-jetty/2.25.1/7a379fc6c75f9aa7b138ea110c6644aaa3b17910/jersey-test-framework-provider-jetty-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework.providers/jersey-test-framework-provider-jetty/2.25.1/9401347ced876790904e7c9919a5ea5d24d23a57/jersey-test-framework-provider-jetty-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.10/c3dcdb62b4297eacbe8a763f36044e1f1b04709b/byte-buddy-1.8.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.10/9f130f27ff614a072ecc22fc0109f9679db7661e/byte-buddy-1.8.10-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.10/51014852fa1b36016a6ef2f2e0defb7f6d9c1696/byte-buddy-1.8.10-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.8.10/957933bd13319beb33138494122e8fd1c347bce4/byte-buddy-agent-1.8.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.8.10/a2e15ebed03af81d82031fe76c884af643fc0f05/byte-buddy-agent-1.8.10-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.8.10/1d61915c076d013c737891ad7d6a50a9643b99f5/byte-buddy-agent-1.8.10-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/27c490ca18fcdfb94e28387e04ae37c4aa1abb23/objenesis-2.6-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/96614f514a1031296657bf0dde452dc15e42fcb8/objenesis-2.6-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/a43be367110c491787219f1c128b5b5fc54f1e70/groovy-2.4.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/f36de0e5ce06bbc73013a8b5806ddfd76579c498/groovy-2.4.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/5588d177f5427312a68cd2589545fc58f4513b9b/groovy-2.4.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.12/b5c023bbbc8a4bbf9c0b38d731fe31d53f00c64a/groovy-xml-2.4.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.12/5b19b2a6ca0065e2680ddac39797e7e8bac80f79/groovy-xml-2.4.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.12/29c8fce1be5c700262e8e3f5ebbf93be994b7892/groovy-xml-2.4.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/d1577ae15f01ef5438c5afc62162457c00a34713/httpclient-4.5.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/feaf46a8d8f2da5f87d8164069cc3e865875e3b2/httpclient-4.5.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.1/96823b9421ebb9f490dec837d9f96134e864e3a7/httpmime-4.5.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.1/c8278f1555f150b2543661b6cc5d18f8f7d3dd33/httpmime-4.5.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.1/2aab83661676c842d50995fe934550e3e23b3c6/httpmime-4.5.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4324046c5f99f3dc91b5370899fa3ae65fd137d2/hamcrest-library-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/47a7ee46628ab7133129cd7cef1e92657bc275e/hamcrest-library-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.ccil.cowan.tagsoup/tagsoup/1.2.1/5584627487e984c03456266d3f8802eb85a9ce97/tagsoup-1.2.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.ccil.cowan.tagsoup/tagsoup/1.2.1/3218791a1731510e12650d46d884097ecb3abbe4/tagsoup-1.2.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.ccil.cowan.tagsoup/tagsoup/1.2.1/31cbf81bece906e382034d2b04e2e5c47e864c17/tagsoup-1.2.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/e983c312915567a8762af42a306ea907e0fef0d2/json-path-3.1.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/998f0f6e573a4aec668efdf2476fc0a0e12dae9c/json-path-3.1.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/57f5fa898a905d8ad7cd58269d7c1279efeee4e2/json-path-3.1.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/xml-path/3.1.0/168ff4eb8abd7bd14db4ff9e3acf5b35e393964e/xml-path-3.1.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/xml-path/3.1.0/4a3a7ba2578f9bc1bfcc45eddd0b3631d888c068/xml-path-3.1.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/xml-path/3.1.0/1d0d06b43237d1aae3eb739276c841f5360e5ea7/xml-path-3.1.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework/jersey-test-framework-core/2.25.1/9368dc18933a8b9f2526c86ab310b02781969aa3/jersey-test-framework-core-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework/jersey-test-framework-core/2.25.1/a156a3d46e65bb685c6961e37bb8f2150e812ab7/jersey-test-framework-core-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.test-framework/jersey-test-framework-core/2.25.1/688f815432ff340bb6650ad93377201f2593e870/jersey-test-framework-core-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/e3fd8ced1f52c7574af952e2e6da0df8df08eb82/httpcore-4.4.6.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/31b01ef06400e3d48200d46ea3ca454ebbe8312f/httpcore-4.4.6-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/57cc0a7af46d66754e632bddc558a913b9e66ac3/httpcore-4.4.6-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/83033ee697035dfb9ce3503e1ac0c5a33021e503/commons-logging-1.2-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/d103169e712eb2473072d53636b0c3bc380b8afb/commons-codec-1.9-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/3f15fff45d57656685abfee9e8302bf14580044c/commons-codec-1.9-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/2.4.12/810b46f2b359b904c4c7428ad4c03c09094a01ff/groovy-json-2.4.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/2.4.12/a5501749dca0b298ed8fbaa893e929d3fb9375d2/groovy-json-2.4.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/2.4.12/33002ede4238d8925a84d234697720851c429391/groovy-json-2.4.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/e2ba9ea9a11d3508aca8b46d65888581ea0cf4e3/rest-assured-common-3.1.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/f1dcab37d932b3b5de31ba2f7580cbb549a81f55/rest-assured-common-3.1.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured-common/3.1.0/62e6f6f545ef1442f103a2e47ea7f28d5134a12b/rest-assured-common-3.1.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/75412eddcd8c9f4d338e09966b6df2f01c7df9ff/commons-lang3-3.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/b49dafc9cfef24c356827f322e773e7c26725dd2/commons-lang3-3.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12/4c83805595b15acf41d71d49e3add7c0e85baaed/jaxb-api-2.2.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12/c23da863b92adeb3ee15d89051baa4c20b8855fa/jaxb-api-2.2.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12/614c7681949a44e0884a1745ac21c4eb6811c019/jaxb-api-2.2.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.25.1/400e30bb035a0cdf3c554530224141ce659a0d1e/jersey-container-servlet-core-2.25.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.25.1/53c9527b5f7df64ddaf23ea4daf67c2a9ae5a657/jersey-container-servlet-core-2.25.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.25.1/d99241eb017d4943a55b01def4a58d620782e49a/jersey-container-servlet-core-2.25.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/941a8be4506c65f0a9001c08812fb7da1e505e21/junit-4.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/gana/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+  <component name="ModuleRootManager"/>
+</module>

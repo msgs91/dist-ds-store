@@ -1,5 +1,6 @@
 package house.replication;
 
+import com.google.common.util.concurrent.ListenableFuture;
 import house.service.Packet;
 
 import java.util.List;
@@ -11,11 +12,11 @@ public interface Replicator {
   
   ReplicaResponse replicateLocally(Packet packet);
   
-  List<Future<ReplicaResponse>> sendToReplicas(Packet packet);
+  List<ListenableFuture<ReplicaResponse>> sendToReplicas(Packet packet);
   
-  int waitFor(List<Future<ReplicaResponse>> replicaResponses);
+  int waitFor(Long transactionId, List<ListenableFuture<ReplicaResponse>> replicaResponses);
   
-  ReplicaResponse readFromMaster(Long transactionId);
+//  ReplicaResponse readFromMaster(Long transactionId);
   
   void sendTransactionsTo(int replicaId, Long fromTransactionId);
 }

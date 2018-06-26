@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/e983c312915567a8762af42a306ea907e0fef0d2/json-path-3.1.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/998f0f6e573a4aec668efdf2476fc0a0e12dae9c/json-path-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/3.1.0/57f5fa898a905d8ad7cd58269d7c1279efeee4e2/json-path-3.1.0-sources.jar!/" />
     </SOURCES>
