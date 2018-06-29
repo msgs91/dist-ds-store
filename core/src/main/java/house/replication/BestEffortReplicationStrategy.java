@@ -5,9 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import house.AppConfig;
 import house.api.client.KV;
 import house.exception.ApplicationException;
-import house.service.Data;
-import house.service.Packet;
+import house.model.Data;
+import house.model.Packet;
 import house.store.InMemoryStore;
+import house.wal.WalReader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -21,11 +22,12 @@ public class BestEffortReplicationStrategy implements ReplicationStrategy {
   AppConfig config;
   int numOfReplicas;
 
-  public BestEffortReplicationStrategy(AppConfig config, Replicator replicator, InMemoryStore store) {
+  public BestEffortReplicationStrategy(AppConfig config, Replicator replicator, InMemoryStore store) throws IOException {
     this.replicator = replicator;
     this.store = store;
     this.config = config;
     this.numOfReplicas = config.getReplicas().size();
+    loadStore();
   }
 
   @Override
@@ -98,5 +100,17 @@ public class BestEffortReplicationStrategy implements ReplicationStrategy {
   @Override
   public Long getNextTransactionId() {
     return store.getNextTransactionId();
+  }
+
+  private void loadStore() throws IOException {
+    WalReader reader = new WalReader(config);
+    Optional<Packet> maybePacket = reader.readNext();
+    while (maybePacket.isPresent()) {
+      Packet packet = maybePacket.get();
+      if (packet.getType() == "replicate_kv") {
+        KV kv = new ObjectMapper().readValue(packet.getData().getValue(), KV.class);
+        store.put(packet.getTransactionId(), kv.getKey(), kv.getValue());
+      }
+    }
   }
 }

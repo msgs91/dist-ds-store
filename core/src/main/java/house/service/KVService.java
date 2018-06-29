@@ -3,8 +3,12 @@ package house.service;
 import house.AppConfig;
 import house.api.client.KV;
 import house.api.response.ClusterResponse;
+import house.model.Data;
+import house.model.Packet;
 import house.replication.ReplicationStrategy;
 import house.replication.Replicator;
+import house.store.InMemoryStore;
+import house.wal.WalReader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -16,11 +20,27 @@ public class KVService {
   ReplicationStrategy replicationStrategy;
   Replicator replicator;
   AppConfig config;
+  InMemoryStore store;
+//  MasterClient master;
 
-  public KVService(AppConfig config, Replicator replicator, ReplicationStrategy replicationStrategy) throws IOException {
+  public KVService(AppConfig config,
+                   Replicator replicator,
+                   ReplicationStrategy replicationStrategy,
+                   InMemoryStore store) throws IOException {
     this.config = config;
     this.replicationStrategy = replicationStrategy;
     this.replicator = replicator;
+    this.store = store;
+    
+  }
+  
+  public void start() throws IOException {
+    loadStoreFromWal();
+//    if (!isMaster()) {
+//      this.master = new MasterClient(config.getReplicas().get(0));
+//      loadStoreFromMaster();
+//    }
+    log.info("Starting");
     log.info(String.format("Expecting next transaction %d", replicationStrategy.getNextTransactionId()));
   }
 
@@ -60,6 +80,14 @@ public class KVService {
     }
     return response;
   }
+  
+  public boolean isMaster() {
+    return config.isMaster();
+  }
+  
+  public Long nextTransactionId() {
+    return store.getNextTransactionId();
+  }
 
   private ClusterResponse handlePacket(Packet packet) {
     ClusterResponse response;
@@ -82,9 +110,23 @@ public class KVService {
     }
     return response;
   }
-
-  public boolean isMaster() {
-    return config.isMaster();
+  
+  private void loadStoreFromWal() throws IOException {
+    log.info("Loading store from wal...");
+    WalReader reader = new WalReader(config);
+    Optional<Packet> maybePacket = reader.readNext();
+    while (maybePacket.isPresent()) {
+      Packet packet = maybePacket.get();
+      replicationStrategy.processWalPacket(packet);
+      maybePacket = reader.readNext();
+    }
   }
-
+  
+//  private void loadStoreFromMaster() {
+//    master.checkHealth();
+//    boolean isSuccess = master.getTransactionsFrom(store.getNextTransactionId());
+//    if (!isSuccess) {
+//      log.info("Failed to connect to master..");
+//    }
+//  }
 }

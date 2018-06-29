@@ -1,13 +1,17 @@
 package house.replication;
 
 import com.google.common.util.concurrent.ListenableFuture;
-import house.service.Packet;
+import house.model.Packet;
 
 import java.util.List;
 import java.util.concurrent.Future;
 
 public interface Replicator {
   
+  void start();
+
+  void stop();
+
   int getId();
   
   ReplicaResponse replicateLocally(Packet packet);
@@ -18,5 +22,5 @@ public interface Replicator {
   
 //  ReplicaResponse readFromMaster(Long transactionId);
   
-  void sendTransactionsTo(int replicaId, Long fromTransactionId);
+  boolean sendTransactionsTo(int replicaId, Long fromTransactionId);
 }

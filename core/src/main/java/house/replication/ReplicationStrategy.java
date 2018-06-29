@@ -1,7 +1,7 @@
 package house.replication;
 
 import house.api.client.KV;
-import house.service.Packet;
+import house.model.Packet;
 
 import java.util.Optional;
 

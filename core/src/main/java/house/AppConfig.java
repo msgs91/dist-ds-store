@@ -25,8 +25,7 @@ public class AppConfig {
     String[] parts = selfUri.split(":");
     host = parts[0];
     port = Integer.parseInt(parts[1]);
-//    replicas.remove(id-1);
-    isMaster = config.getBoolean("master");
+    isMaster = (id == 1);
     walDir = config.getString("wal-dir");
     replicationStrategy = config.getString("replicationStrategy");
   }

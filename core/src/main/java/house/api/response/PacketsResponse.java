@@ -2,7 +2,7 @@ package house.api.response;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import house.service.Packet;
+import house.model.Packet;
 
 import java.util.List;
 

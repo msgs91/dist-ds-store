@@ -7,14 +7,17 @@ import com.google.common.util.concurrent.ListenableFutureTask;
 import com.google.common.util.concurrent.SettableFuture;
 import house.AppConfig;
 import house.exception.ApplicationException;
-import house.service.Packet;
+import house.model.Packet;
 import house.service.ReplicaClient;
 import house.wal.Wal;
 import house.wal.WalReader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -23,47 +26,58 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 @Slf4j
 public class ReplicatorImpl implements Replicator {
-
+  
   int id;
-  int masterId;
-  List<ReplicaClient> replicaClients;
+  Map<Integer, ReplicaClient> replicaClients;
   Wal wal;
   AppConfig config;
   BlockingQueue<ReplicaResponse> responseQueue;
-  Map<Long, List<SettableFuture<ReplicaResponse>>> awaitingPromises;
+  Map<Long, Map<Integer, SettableFuture<ReplicaResponse>>> awaitingPromises;
   AtomicBoolean stopped;
-
+  
   public ReplicatorImpl(AppConfig config) throws IOException {
     this.id = config.getId();
     this.config = config;
-    this.replicaClients = new LinkedList<>();
+    this.replicaClients = new HashMap<>();
     //TODO all replicas need not create a full graph connection with all other replicas
     List<String> replicaUrls = config.getReplicas();
     this.wal = new Wal(config);
     this.responseQueue = new LinkedBlockingQueue<>(10);
-
+    
     for (int i = 1; i <= replicaUrls.size() && config.isMaster(); i++) {
       if (i != config.getId()) {
         ReplicaClient client = new ReplicaClient(i, replicaUrls.get(i - 1), new WalReader(config), responseQueue);
-        this.replicaClients.add(client);
+        this.replicaClients.put(client.getId(), client);
       }
     }
-    this.masterId = 1;
     this.stopped = new AtomicBoolean(false);
     this.awaitingPromises = new HashMap<>(10);
-    new Thread(this::handleReplicaResponses, "ReplicaResponseHadler").start();
   }
-
+  
+  @Override
+  public void start() {
+    stopped.set(false);
+    if (isMaster()) {
+      new Thread(this::handleReplicaResponses, "ReplicaResponseHadler").start();
+      for (ReplicaClient client : replicaClients.values()) {
+        client.start(1L);
+      }
+    }
+  }
+  
+  @Override
   public void stop() {
     stopped.set(true);
-    replicaClients.forEach(ReplicaClient::stop);
+    if (isMaster()) {
+      replicaClients.forEach((id, replicaClient) -> replicaClient.stop());
+    }
   }
-
+  
   @Override
   public int getId() {
     return this.id;
   }
-
+  
   @Override
   public ReplicaResponse replicateLocally(Packet packet) {
     ReplicaResponse response;
@@ -81,18 +95,16 @@ public class ReplicatorImpl implements Replicator {
     }
     return response;
   }
-
-
-
+  
   @Override
   public List<ListenableFuture<ReplicaResponse>> sendToReplicas(Packet packet) {
     ListenableFutureTask<ReplicaResponse> localResponse = ListenableFutureTask.create(() -> replicateLocally(packet));
     List<ListenableFuture<ReplicaResponse>> remoteResponses = new ArrayList<>(replicaClients.size());
-    List<SettableFuture<ReplicaResponse>> settableFutures = new ArrayList<>(replicaClients.size());
-    for (ReplicaClient client: replicaClients) {
+    Map<Integer, SettableFuture<ReplicaResponse>> settableFutures = new HashMap<>(replicaClients.size());
+    for (Map.Entry<Integer, ReplicaClient> client: replicaClients.entrySet()) {
       SettableFuture<ReplicaResponse> future = SettableFuture.create();
       remoteResponses.add(future);
-      settableFutures.add(future);
+      settableFutures.put(client.getValue().getId(), future);
     }
     synchronized (this) {
       awaitingPromises.put(packet.getTransactionId(), settableFutures);
@@ -101,37 +113,18 @@ public class ReplicatorImpl implements Replicator {
     localResponse.run();
     return remoteResponses;
   }
-
-  private void handleReplicaResponses() {
-    while (!stopped.get()) {
-      try {
-        ReplicaResponse response = responseQueue.take();
-        //TODO assume its always available
-        List<SettableFuture<ReplicaResponse>> futures;
-        synchronized (this) {
-          futures = awaitingPromises.get(response.getTransactionId());
-        }
-        //if null, means the future list has been removed in waitFor
-        if (futures != null) {
-          SettableFuture<ReplicaResponse> future = futures.get(response.getReplicaId());
-          future.set(response);
-        }
-      } catch (InterruptedException e) {
-        String message = "Failed to read replica response from queue";
-        log.error(message, e);
-        throw new ApplicationException(message, e);
-      }
-
-    }
-  }
-
+  
   @Override
   public int waitFor(Long transactionId, List<ListenableFuture<ReplicaResponse>> responseFutures) {
     int succeeded = 0;
     int failed = 0;
     ListenableFuture<List<ReplicaResponse>> transactionFuture = Futures.allAsList(responseFutures);
     try {
-      List<ReplicaResponse> replicaResponses = transactionFuture.get(5, TimeUnit.SECONDS);
+      Long start = System.nanoTime();
+      List<ReplicaResponse> replicaResponses = transactionFuture.get(1, TimeUnit.SECONDS);
+      Long read = System.nanoTime();
+      Long latency = (read - start)/1000000L;
+      log.info(String.format("Got response in %d milliseconds", latency));
       if (transactionFuture.isDone()) {
         for (ReplicaResponse response : replicaResponses) {
           if (response.getResponse() != 200) {
@@ -151,50 +144,46 @@ public class ReplicatorImpl implements Replicator {
     }
     return succeeded;
   }
-
+  
   @Override
-  public void sendTransactionsTo(int replicaId, Long fromTransactionId) {
-
+  public boolean sendTransactionsTo(int replicaId, Long fromTransactionId) {
+    ReplicaClient client = replicaClients.get(replicaId);
+    client.start(fromTransactionId);
+    return true;
   }
-
-//  @Override
-//  public ReplicaResponse readFromMaster(Long transactionId) {
-//    boolean end = false;
-//    log.info(String.format("Reading transactions from master starting from %d", transactionId));
-//    Data data = new Data("get_transactions_from", transactionId.toString(), 1);
-//    Packet clusterPacket = new Packet(0L, config.getReplicaId(), "cluster", 1, null, data);
-//    ReplicaClient master = getMaster();
-//    Future<ReplicaResponse> ack = master.sendIfStarting(clusterPacket);
-//    try {
-//      ReplicaResponse response = ack.get();
-//      return new ReplicaResponse(master.getReplicaId(), response.getResponse());
-//    } catch (Exception e) {
-//      log.error(e.getMessage(), e);
-//      return new ReplicaResponse(master.getReplicaId(), 503);
-//    }
-//  }
-
-  private ReplicaClient getMaster() {
-    return replicaClients.get(this.masterId - 1);
+  
+  private void handleReplicaResponses() {
+    while (!stopped.get()) {
+      try {
+        ReplicaResponse response = responseQueue.take();
+        //TODO assume its always available
+        Map<Integer, SettableFuture<ReplicaResponse>> futures;
+        synchronized (this) {
+          futures = awaitingPromises.get(response.getTransactionId());
+        }
+        //if null, means the future list has been removed in waitFor
+        if (futures != null) {
+          SettableFuture<ReplicaResponse> future = futures.get(response.getReplicaId());
+          if (future != null) {
+            future.set(response);
+          } else {
+            //TODO how to handle null here ? ApplicationException ?
+          }
+        }
+      } catch (InterruptedException e) {
+        String message = "Failed to read replica response from queue";
+        log.error(message, e);
+        throw new ApplicationException(message, e);
+      }
+      
+    }
   }
-
-  /*private  List<Future<ReplicaResponse>> sendToRemoteReplicas(Packet packet) {
-    List<Future<ReplicaResponse>> futureResponses = new ArrayList<>(replicaClients.size()-1);
-    for (ReplicaClient replicaClient : replicaClients) {
-      Future<ReplicaResponse> ack = replicaClient.sendIfUp(packet);
-      futureResponses.add(ack);
-    }
-    return futureResponses;
+  
+  private int getMasterId() {
+    return 1;
   }
-
-  private  void sendToRemoteReplica(int replicaId) {
-    while (true) {
-
-    }
-    List<Future<ReplicaResponse>> futureResponses = new ArrayList<>(replicaClients.size()-1);
-    for (ReplicaClient replicaClient : replicaClients) {
-      Future<ReplicaResponse> ack = replicaClient.sendIfUp(packet);
-      futureResponses.add(ack);
-    }
-  }*/
+  
+  private boolean isMaster() {
+    return config.isMaster();
+  }
 }

@@ -1,6 +1,5 @@
 id=1
 port=8001
 replicas=["0.0.0.0:8001", "http://localhost:8002", "http://localhost:8003"]
-master=true
 replicationStrategy="twoPhaseCommit"
-wal-dir="/tmp/app1"
+wal-dir="/home/gana/workspace/data/app1"

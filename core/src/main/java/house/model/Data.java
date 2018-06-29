@@ -1,4 +1,4 @@
-package house.service;
+package house.model;
 
 public class Data {
   String type;

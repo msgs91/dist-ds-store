@@ -2,6 +2,7 @@ package house.service;
 
 import com.google.common.util.concurrent.SettableFuture;
 import house.exception.ApplicationException;
+import house.model.Packet;
 import house.replication.ReplicationStrategy;
 import house.replication.Replicator;
 import lombok.AllArgsConstructor;
@@ -20,7 +21,8 @@ public class TransactionProcessor {
     @Getter
     @AllArgsConstructor
     class Item {
-        @NotNull Packet packet;
+        @NotNull
+        Packet packet;
         @NotNull SettableFuture<TransactionResponse> responseFuture;
     }
 
