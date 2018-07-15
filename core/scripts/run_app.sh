@@ -1,0 +1,1 @@
+java -jar core-0.0-all.jar -Dlog4j.configurationFile=/etc/store/app.xml /etc/store/config2.hocon

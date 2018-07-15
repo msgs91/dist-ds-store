@@ -1,28 +1,19 @@
-# dist-ds-store
+Dockerized Jepsen
+=================
 
-## Choosing pull vs push
+This docker image attempts to simplify the setup required by Jepsen.
+It is intended to be used by a CI tool or anyone with docker who wants to try jepsen themselves.
 
-Replication from master to slave should be either pull or push. We cannot have both. Replication happens in two scenarios.
+It contains all the jepsen dependencies and code. It uses [Docker Compose](https://github.com/docker/compose) to spin up the five
+containers used by Jepsen.  
 
-1) Normal opertions - when slave reads from master immediately after every write
+To start run
 
-2) Fail Recover of slave - when a slave recovers after failure, it needs to get all the old writes before it can accept new writes
+````
+    ./up.sh
+    docker exec -it jepsen-control bash
+````
 
-To ensure proper ordering and consistency, we have to either use pull or push for both. Using push for the first and
-pull for the second could result in data loss.
+During development, it's convenient to run with `--dev` option, which mounts `$JEPSEN_ROOT` dir as `/jepsen` on Jepsen control container.
 
-Scenario
-
-Master accepts writes, say at transaction replicaId 1000
-
-Slave pulls transactions starting from 1 until 1000. 
-
-Then it stops pulling and starts accepting write from master. In the elapsed time between stopping to pull and starting to accept from master, there could be message loss
-
-Master - 1 2 3 ..1000 1001 1002 1003 1004 1005
-
-Slave - Pull 1....1000 ....starting up.... 1005
-
-Writes 1001 thru 1004 are lost
-
-Current implementation has this problem
+Run `./up.sh --help` for more info.

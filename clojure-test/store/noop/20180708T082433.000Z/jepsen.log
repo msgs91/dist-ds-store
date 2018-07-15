@@ -1,0 +1,58 @@
+2018-07-08 08:24:33,655{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:concurrency 5,
+ :db
+ #object[jepsen.db$reify__1498 0x21f459fc "jepsen.db$reify__1498@21f459fc"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x3419e23b "2018-07-08T08:24:33.000Z"],
+ :net
+ #object[jepsen.net$reify__3910 0x67a3bd51 "jepsen.net$reify__3910@67a3bd51"],
+ :client
+ #object[jepsen.client$reify__3766 0x396639b "jepsen.client$reify__3766@396639b"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x7158daf2 "java.util.concurrent.CyclicBarrier@7158daf2"],
+ :ssh
+ {:username "root",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3589 0x8f2098e "jepsen.checker$unbridled_optimism$reify__3589@8f2098e"],
+ :nemesis
+ #object[jepsen.nemesis$reify__3993 0x7e2c64 "jepsen.nemesis$reify__3993@7e2c64"],
+ :active-histories #<Atom@3a543f31: #{}>,
+ :nodes ["n1" "n2" "n3" "n4" "n5"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__2233 0x42b28ff1 "jepsen.generator$reify__2233@42b28ff1"],
+ :os
+ #object[jepsen.os$reify__1415 0x6cd164a6 "jepsen.os$reify__1415@6cd164a6"],
+ :time-limit 60,
+ :model {}}
+
+2018-07-08 08:24:35,870{GMT}	INFO	[jepsen nemesis] jepsen.core: Starting nemesis
+2018-07-08 08:24:35,870{GMT}	INFO	[jepsen worker 0] jepsen.core: Starting worker 0
+2018-07-08 08:24:35,871{GMT}	INFO	[jepsen worker 1] jepsen.core: Starting worker 1
+2018-07-08 08:24:35,871{GMT}	INFO	[jepsen worker 2] jepsen.core: Starting worker 2
+2018-07-08 08:24:35,877{GMT}	INFO	[jepsen worker 3] jepsen.core: Starting worker 3
+2018-07-08 08:24:35,878{GMT}	INFO	[jepsen worker 4] jepsen.core: Starting worker 4
+2018-07-08 08:24:35,878{GMT}	INFO	[jepsen nemesis] jepsen.core: Running nemesis
+2018-07-08 08:24:35,878{GMT}	INFO	[jepsen worker 0] jepsen.core: Running worker 0
+2018-07-08 08:24:35,878{GMT}	INFO	[jepsen worker 1] jepsen.core: Running worker 1
+2018-07-08 08:24:35,878{GMT}	INFO	[jepsen worker 2] jepsen.core: Running worker 2
+2018-07-08 08:24:35,879{GMT}	INFO	[jepsen worker 3] jepsen.core: Running worker 3
+2018-07-08 08:24:35,880{GMT}	INFO	[jepsen worker 4] jepsen.core: Running worker 4
+2018-07-08 08:24:35,880{GMT}	INFO	[jepsen worker 3] jepsen.core: Stopping worker 3
+2018-07-08 08:24:35,880{GMT}	INFO	[jepsen worker 1] jepsen.core: Stopping worker 1
+2018-07-08 08:24:35,880{GMT}	INFO	[jepsen worker 4] jepsen.core: Stopping worker 4
+2018-07-08 08:24:35,882{GMT}	INFO	[jepsen worker 2] jepsen.core: Stopping worker 2
+2018-07-08 08:24:35,882{GMT}	INFO	[jepsen nemesis] jepsen.core: Stopping nemesis
+2018-07-08 08:24:35,882{GMT}	INFO	[jepsen worker 0] jepsen.core: Stopping worker 0
+2018-07-08 08:24:35,894{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2018-07-08 08:24:35,963{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing
+2018-07-08 08:24:35,965{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2018-07-08 08:24:35,967{GMT}	INFO	[jepsen results] jepsen.store: Wrote /jepsen/store/noop/20180708T082433.000Z/results.edn
+2018-07-08 08:24:35,971{GMT}	INFO	[main] jepsen.core: {:valid? true}
+
+
+Everything looks good! ヽ(‘ー`)ノ

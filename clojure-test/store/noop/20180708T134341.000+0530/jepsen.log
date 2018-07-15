@@ -1,0 +1,97 @@
+2018-07-08 13:43:41,984{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:concurrency 5,
+ :db
+ #object[jepsen.db$reify__1498 0x69228e85 "jepsen.db$reify__1498@69228e85"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x2dfe5525 "2018-07-08T13:43:41.000+05:30"],
+ :net
+ #object[jepsen.net$reify__3910 0x1d75e7af "jepsen.net$reify__3910@1d75e7af"],
+ :client
+ #object[jepsen.client$reify__3766 0x79d9214d "jepsen.client$reify__3766@79d9214d"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x702b06fb "java.util.concurrent.CyclicBarrier@702b06fb"],
+ :ssh
+ {:username "root",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3589 0x3ee69ad8 "jepsen.checker$unbridled_optimism$reify__3589@3ee69ad8"],
+ :nemesis
+ #object[jepsen.nemesis$reify__3993 0x8a2a6a "jepsen.nemesis$reify__3993@8a2a6a"],
+ :active-histories #<Atom@140d1230: #{}>,
+ :nodes ["n1" "n2" "n3" "n4" "n5"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__2233 0x7187bac9 "jepsen.generator$reify__2233@7187bac9"],
+ :os
+ #object[jepsen.os$reify__1415 0x56380231 "jepsen.os$reify__1415@56380231"],
+ :time-limit 60,
+ :model {}}
+
+2018-07-08 13:43:42,489{GMT}	ERROR	[clojure-agent-send-off-pool-1] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "n2",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+
+2018-07-08 13:43:42,577{GMT}	ERROR	[clojure-agent-send-off-pool-4] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "n5",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+
+2018-07-08 13:43:42,651{GMT}	ERROR	[clojure-agent-send-off-pool-2] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "n3",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+
+2018-07-08 13:43:42,737{GMT}	ERROR	[clojure-agent-send-off-pool-0] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "n1",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+
+2018-07-08 13:43:42,819{GMT}	ERROR	[clojure-agent-send-off-pool-3] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "n4",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+

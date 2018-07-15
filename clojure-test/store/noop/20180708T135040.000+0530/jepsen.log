@@ -1,0 +1,45 @@
+2018-07-08 13:50:40,329{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:concurrency 1,
+ :db
+ #object[jepsen.db$reify__1498 0x72456279 "jepsen.db$reify__1498@72456279"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x6d303498 "2018-07-08T13:50:40.000+05:30"],
+ :net
+ #object[jepsen.net$reify__3910 0x3d5790ea "jepsen.net$reify__3910@3d5790ea"],
+ :client
+ #object[jepsen.client$reify__3766 0xa18649a "jepsen.client$reify__3766@a18649a"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x14229fa7 "java.util.concurrent.CyclicBarrier@14229fa7"],
+ :ssh
+ {:username "root",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3589 0x7fd8c559 "jepsen.checker$unbridled_optimism$reify__3589@7fd8c559"],
+ :nemesis
+ #object[jepsen.nemesis$reify__3993 0x3cbf1ba4 "jepsen.nemesis$reify__3993@3cbf1ba4"],
+ :active-histories #<Atom@4cb40e3b: #{}>,
+ :nodes ["jepsen-n1"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__2233 0x6cd56321 "jepsen.generator$reify__2233@6cd56321"],
+ :os
+ #object[jepsen.os$reify__1415 0x45e1aa48 "jepsen.os$reify__1415@45e1aa48"],
+ :time-limit 60,
+ :model {}}
+
+2018-07-08 13:50:40,563{GMT}	ERROR	[clojure-agent-send-off-pool-0] jepsen.control: Error opening SSH session. Verify username, password, and node hostnames are correct.
+SSH configuration is:
+ {:dir "/",
+ :private-key-path nil,
+ :password "root",
+ :username "root",
+ :port 22,
+ :strict-host-key-checking false,
+ :host "jepsen-n1",
+ :sudo nil,
+ :dummy nil,
+ :session nil}
+

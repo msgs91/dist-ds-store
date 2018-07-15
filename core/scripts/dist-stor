@@ -1,0 +1,5 @@
+description "Distributed data store"
+
+script
+    exec
+end script

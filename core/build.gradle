@@ -1,11 +1,21 @@
 group 'dist-ds-store'
 apply plugin: 'idea'
 apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
 
-version '1.0-SNAPSHOT'
+version '0.0'
 
 
 sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+    }
+}
 
 repositories {
     mavenCentral()
@@ -42,7 +52,8 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Schema Registry', 'Implementation-Version': 1
+//        attributes 'Implementation-Title': 'Schema Registry', 'Implementation-Version': 1
+        attributes 'Main-class' : 'house.App'
     }
 }
 
@@ -60,3 +71,4 @@ task makeZip(type: Zip, dependsOn: jar) {
 }
 
 build.dependsOn makeZip
+build.dependsOn shadowJar
