@@ -2,3 +2,6 @@
 .idea
 build
 core/build
+bin
+config
+clojure-test/store
