@@ -27,13 +27,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @Slf4j
 public class ReplicatorImpl implements Replicator {
   
-  int id;
-  Map<Integer, ReplicaClient> replicaClients;
-  Wal wal;
-  AppConfig config;
-  BlockingQueue<ReplicaResponse> responseQueue;
-  Map<Long, Map<Integer, SettableFuture<ReplicaResponse>>> awaitingPromises;
-  AtomicBoolean stopped;
+  private final int id;
+  private final Map<Integer, ReplicaClient> replicaClients;
+  private final Wal wal;
+  private final AppConfig config;
+  private final BlockingQueue<ReplicaResponse> responseQueue;
+  private final Map<Long, Map<Integer, SettableFuture<ReplicaResponse>>> awaitingPromises;
+  private final AtomicBoolean stopped;
   
   public ReplicatorImpl(AppConfig config) throws IOException {
     this.id = config.getId();

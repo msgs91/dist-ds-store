@@ -10,13 +10,13 @@ import java.util.List;
 
 public class AppConfig {
   
-  private int port;
-  private String host;
-  private List<String> replicas;
-  private boolean isMaster;
-  private String walDir;
-  private String replicationStrategy;
-  private int id;
+  private final int port;
+  private final String host;
+  private final List<String> replicas;
+  private final boolean isMaster;
+  private final String walDir;
+  private final String replicationStrategy;
+  private final int id;
 
   public AppConfig(Config config) throws Exception {
     id = config.getInt("id");

@@ -2,14 +2,14 @@ package house.model;
 
 public class Packet {
 
-    Long transactionId;
-    int replicaId;
+    private Long transactionId;
+    private int replicaId;
 
-    String type;
-    int version;
+    private String type;
+    private int version;
 
-    Meta meta;
-    Data data;
+    private Meta meta;
+    private Data data;
 
     public Packet(Long transactionId, int replicaId, String type, int version, Meta meta, Data data) {
         this.transactionId = transactionId;

@@ -17,10 +17,10 @@ import java.util.Optional;
 @Slf4j
 public class BestEffortReplicationStrategy implements ReplicationStrategy {
 
-  Replicator replicator;
-  InMemoryStore store;
-  AppConfig config;
-  int numOfReplicas;
+  private final Replicator replicator;
+  private final InMemoryStore store;
+  private final AppConfig config;
+  private final int numOfReplicas;
 
   public BestEffortReplicationStrategy(AppConfig config, Replicator replicator, InMemoryStore store) throws IOException {
     this.replicator = replicator;

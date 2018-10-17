@@ -17,11 +17,10 @@ import java.util.Optional;
 @Slf4j
 public class KVService {
 
-  ReplicationStrategy replicationStrategy;
-  Replicator replicator;
-  AppConfig config;
-  InMemoryStore store;
-//  MasterClient master;
+  private final ReplicationStrategy replicationStrategy;
+  private final Replicator replicator;
+  private final AppConfig config;
+  private final InMemoryStore store;
 
   public KVService(AppConfig config,
                    Replicator replicator,
@@ -31,15 +30,10 @@ public class KVService {
     this.replicationStrategy = replicationStrategy;
     this.replicator = replicator;
     this.store = store;
-    
   }
   
   public void start() throws IOException {
     loadStoreFromWal();
-//    if (!isMaster()) {
-//      this.master = new MasterClient(config.getReplicas().get(0));
-//      loadStoreFromMaster();
-//    }
     log.info("Starting");
     log.info(String.format("Expecting next transaction %d", replicationStrategy.getNextTransactionId()));
   }
@@ -121,7 +115,7 @@ public class KVService {
       maybePacket = reader.readNext();
     }
   }
-  
+
 //  private void loadStoreFromMaster() {
 //    master.checkHealth();
 //    boolean isSuccess = master.getTransactionsFrom(store.getNextTransactionId());

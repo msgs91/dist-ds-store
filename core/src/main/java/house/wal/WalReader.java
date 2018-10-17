@@ -14,8 +14,8 @@ import java.util.Optional;
 @Slf4j
 public class WalReader {
 
-    RandomAccessFile file;
-    AppConfig config;
+    private final RandomAccessFile file;
+    private final AppConfig config;
 
     public WalReader(AppConfig config) throws IOException {
         this.config = config;

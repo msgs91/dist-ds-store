@@ -27,11 +27,11 @@ public class TwoPhaseCommitStrategy implements ReplicationStrategy {
     QUORUM;
   }
   
-  AppConfig config;
-  Replicator replicator;
-  InMemoryStore store;
-  int numOfReplicas;
-  int minNumOfSuccess;
+  private final AppConfig config;
+  private final Replicator replicator;
+  private final InMemoryStore store;
+  private final int numOfReplicas;
+  private final int minNumOfSuccess;
   
   public TwoPhaseCommitStrategy(AppConfig config,
                                 Replicator replicator,

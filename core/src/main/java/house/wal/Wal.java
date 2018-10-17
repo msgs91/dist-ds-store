@@ -12,7 +12,7 @@ import java.util.Optional;
 @Slf4j
 public class Wal implements ILog {
   
-  private AppConfig config;
+  private final AppConfig config;
   private FileOutputStream os;
   private BufferedWriter writer;
 

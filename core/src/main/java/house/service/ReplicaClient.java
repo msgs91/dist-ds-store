@@ -19,8 +19,8 @@ import static house.service.AbstractClient.State.DOWN;
 @Slf4j
 public class ReplicaClient extends AbstractClient {
 
-  private WalReader reader;
-  BlockingQueue<ReplicaResponse> responseQueue;
+  private final WalReader reader;
+  private final BlockingQueue<ReplicaResponse> responseQueue;
 
   public ReplicaClient(int id, String uri, WalReader reader, BlockingQueue<ReplicaResponse> responseQueue) {
     Client client = ClientBuilder.newClient();

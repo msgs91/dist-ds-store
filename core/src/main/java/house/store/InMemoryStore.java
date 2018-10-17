@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Slf4j
 public class InMemoryStore {
   private Map<String, String> kv;
-  private AppConfig config;
+  private final AppConfig config;
   private AtomicLong nextTransactionId;
 
   public InMemoryStore(AppConfig config) {
