@@ -17,6 +17,8 @@ import java.util.Optional;
 @Slf4j
 public class KVService {
 
+  //TODO could be replaced by paxos, zab or anything else
+  // depending on the algorithm, the consistency guarantees would change
   private final ReplicationStrategy replicationStrategy;
   private final Replicator replicator;
   private final AppConfig config;

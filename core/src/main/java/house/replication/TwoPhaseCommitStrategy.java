@@ -29,6 +29,7 @@ public class TwoPhaseCommitStrategy implements ReplicationStrategy {
   
   private final AppConfig config;
   private final Replicator replicator;
+  //TODO should be able to replace with any storage like like rocksdb
   private final InMemoryStore store;
   private final int numOfReplicas;
   private final int minNumOfSuccess;
