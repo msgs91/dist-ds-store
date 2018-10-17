@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b16e334-06e7-4476-962d-8966ca86627a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/clojure-test/project.clj" afterPath="$PROJECT_DIR$/clojure-test/project.clj" />
-      <change beforePath="$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj" afterPath="$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj" />
-      <change beforePath="$PROJECT_DIR$/clojure-test/store/latest" afterPath="$PROJECT_DIR$/clojure-test/store/latest" />
-      <change beforePath="$PROJECT_DIR$/clojure-test/store/noop/latest" afterPath="$PROJECT_DIR$/clojure-test/store/noop/latest" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle" afterPath="$PROJECT_DIR$/core/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/conf/config1.hocon" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/conf/config2.hocon" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/conf/config3.hocon" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/model/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/model/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/service/KVService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/service/KVService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/core/.gradle/" />
     <ignored path="$PROJECT_DIR$/core/build/" />
@@ -20,7 +21,6 @@
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,106 +51,141 @@
       </state>
     </system>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1800297072">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="519" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="519" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="up.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/docker/up.sh">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile3" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile3">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="400" lean-forward="false" selection-start-line="3" selection-start-column="400" selection-end-line="3" selection-end-column="400" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="576">
+              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
-                <element signature="e#0#862#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/build.gradle">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/KVService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="76" column="28" lean-forward="false" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="528">
+              <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/model/Packet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="264">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="192">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding>
+                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clojure-test/project.clj">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/MasterClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="139">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/docker/control/Dockerfile">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="-2184">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/Replicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -167,6 +202,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>./core/docker</find>
+      <find>lombok</find>
     </findStrings>
     <replaceStrings>
       <replace>.</replace>
@@ -524,7 +560,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7659214802000" />
+        <entry key="$PROJECT_DIR$" value="9225673234000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3275905738" />
         <entry key="$PROJECT_DIR$/core/build.gradle" value="3365413640" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="0" />
@@ -552,8 +589,8 @@
                         <option name="entries">
                           <list>
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jengelman.gradle.plugins/shadow/2.0.1/5d9ecff78d4be76705645ca65c29d461c16763d5/shadow-2.0.1-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jengelman.gradle.plugins/shadow/2.0.1/60f2487d11466d5e74ee993fce3c79b7bc71d88c/shadow-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-backports-compat23/2.4.4/8c7351852ffdd79f8e06b4052f662cc996e3598c/groovy-backports-compat23-2.4.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jengelman.gradle.plugins/shadow/2.0.1/60f2487d11466d5e74ee993fce3c79b7bc71d88c/shadow-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-backports-compat23/2.4.4/db18ea377b154334e5323451835d329802222fa/groovy-backports-compat23-2.4.4.jar" />
                           </list>
                         </option>
@@ -566,160 +603,155 @@
               <option name="name" value="core" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/tooling-api-builders" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-gcs" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-option" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-init" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ear" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/test-kit" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/model-core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-play" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugin-use" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/installation-beacon" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide-play" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-sftp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/workers" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-play" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/version-control" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-cache-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-cache" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/test-kit" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/testing-jvm" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-android-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/launcher" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/testing-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/core-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/dependency-management" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugin-development" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/testing-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/logging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/jvm-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/persistent-cache" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-init" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-s3" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/javascript" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/persistent-cache" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-testing" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-java" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/model-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugins" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-model-core-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-runtime-api-info-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-build-cache-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-tooling-builders-0.14.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-logging-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-installation-beacon-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-messaging-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-tooling-models-0.14.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/src/dependency-management" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-docs-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-process-services-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-core-api-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-0.14.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-persistent-cache-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-build-option-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-core-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/ant-launcher-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-cli-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/groovy-all-2.4.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-jvm-services-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-runtime-api-info-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-messaging-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-installation-beacon-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-tooling-builders-0.14.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-wrapper-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-tooling-api-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/ant-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-base-services-groovy-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-launcher-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-resources-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-wrapper-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-base-services-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-build-option-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-model-core-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-tooling-models-0.14.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-model-groovy-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ivy-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-play-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-jvm-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-core-api-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-resources-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-jvm-services-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-base-services-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-kotlin-dsl-0.14.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-logging-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-base-services-groovy-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-persistent-cache-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-process-services-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-core-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-cli-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-build-cache-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/gradle-launcher-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ide-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugin-development-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-groovy-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ide-play-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-jvm-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-java-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-maven-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-composite-builds-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-s3-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-play-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-publish-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-scala-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-scala-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-dependency-management-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-workers-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-sftp-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-code-quality-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-jvm-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugin-use-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-osgi-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-java-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-init-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-jvm-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-test-kit-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-comparison-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ivy-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ear-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-gcs-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-reporting-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugins-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-signing-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-announce-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-version-control-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-base-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-base-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-http-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ide-native-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-diagnostics-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-javascript-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-tooling-api-builders-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-antlr-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-jacoco-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ide-native-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugins-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ide-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-ear-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-diagnostics-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-s3-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-native-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-base-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-groovy-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-announce-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-cache-http-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-osgi-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-dependency-management-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-javascript-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-maven-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugin-use-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-test-kit-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-reporting-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-sftp-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-comparison-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-scala-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-version-control-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-code-quality-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-tooling-api-builders-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-publish-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-native-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-base-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-plugin-development-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-init-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-composite-builds-4.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-language-jvm-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-resources-gcs-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-workers-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-signing-4.5.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-platform-native-4.5.jar" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-build-cache-http-4.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.5-all/cg9lyzfg3iwv6fa00os9gcgj4/gradle-4.5/lib/plugins/gradle-testing-jvm-4.5.jar" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
       </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
     </option>
     <option name="projectSyncType">
       <map>
@@ -741,28 +773,20 @@
         <option value="$PROJECT_DIR$/core/src/main/java/house/model/Message.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/model/Data.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/model/Meta.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/replication/ReplicationStrategy.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/replication/Replicator.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/service/TransactionProcessor.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/wal/ILog.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/wal/Wal.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/model/Packet.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/api/response/PacketsResponse.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/model/Packets.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/AppConfig.java" />
         <option value="$PROJECT_DIR$/core/src/main/conf/config1.hocon" />
         <option value="$PROJECT_DIR$/core/src/main/conf/config2.hocon" />
         <option value="$PROJECT_DIR$/core/src/main/conf/config3.hocon" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/service/MasterClient.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/api/cluster/ClusterResource.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/service/KVService.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/service/AbstractClient.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/house/App.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java" />
         <option value="$PROJECT_DIR$/core/scripts/run_app.sh" />
         <option value="$PROJECT_DIR$/core/scripts/dist-store.conf" />
         <option value="$PROJECT_DIR$/core/scripts/dist-stor" />
@@ -777,59 +801,35 @@
         <option value="$PROJECT_DIR$/core/build.gradle" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/AppConfig.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/service/KVService.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/model/Packet.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1299" />
-    <option name="height" value="764" />
+    <option name="y" value="34" />
+    <option name="width" value="960" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="clojure-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="clojure-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="clojure-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clojure_test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
@@ -849,18 +849,58 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="replication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dist-ds-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dist-ds-store" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jepsen/consul" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -876,81 +916,64 @@
   </component>
   <component name="RunManager" selected="Application.App2">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="App1" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="house.App" />
+      <module name="core_main" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config1.hocon" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app1.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="house.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="house.App" />
-      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app1.xml" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config1.hocon" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core_main" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="App2" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="house.App" />
+      <module name="core_main" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config2.hocon" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app2.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="house.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="house.App" />
-      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app2.xml" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config2.hocon" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core_main" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="App3" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="house.App" />
+      <module name="core_main" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config3.hocon" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app3.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="house.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="house.App" />
-      <option name="VM_PARAMETERS" value="-Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/conf/app3.xml" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/core/src/main/conf/config3.hocon" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="core_main" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="clojure-test.core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="dist-ds-store" />
@@ -963,84 +986,38 @@
       <setting name="workDir" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.App2" />
-      <item index="1" class="java.lang.String" itemvalue="Application.App3" />
-      <item index="2" class="java.lang.String" itemvalue="Application.App1" />
+    <list>
+      <item itemvalue="Application.App2" />
+      <item itemvalue="Application.App3" />
+      <item itemvalue="Application.App1" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.App1" />
+      <list>
+        <item itemvalue="Application.App1" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1532957541345" />
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1056,41 +1033,41 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
+    <frame x="0" y="34" width="1920" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659408" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40155038" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24701196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31570762" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12620838" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970452" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32348368" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32613635" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.31477273" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.40155038" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32970452" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32814178" />
+      <window_info anchor="right" id="sbt" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Leiningen" order="9" />
+      <window_info anchor="right" id="REPL" order="10" side_tool="true" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1109,219 +1086,74 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/ReplicationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/conf/app1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="41" />
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/house/model/Packets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/conf/config2.hocon" />
     <entry file="file://$PROJECT_DIR$/core/src/main/conf/config3.hocon" />
     <entry file="file://$PROJECT_DIR$/core/src/main/conf/config1.hocon" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/MasterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/Replicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="125" column="44" lean-forward="false" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip!/java/util/concurrent/Future.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="166" column="6" lean-forward="false" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip!/java/util/concurrent/Future.java" />
     <entry file="file://$PROJECT_DIR$/clojure-test/test/clojure_test/core_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" column="7" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure-test/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/house/api/cluster/ClusterResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/api/response/ClusterResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/AbstractClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/KVService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="126" column="58" lean-forward="false" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/api/cluster/ClusterResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jepsen/consul/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../jepsen/consul/project.clj" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/house/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/scripts/run_app.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state>
+          <caret column="83" selection-start-column="83" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/house/api/response/ClusterResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state>
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/AbstractClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/KVService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="126" column="58" lean-forward="false" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
+        <state>
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/scripts/dist-stor">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state>
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1331,105 +1163,147 @@
     <entry file="file://$PROJECT_DIR$/docker/node/Dockerfile1" />
     <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml" />
     <entry file="file://$PROJECT_DIR$/docker-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/core/docker/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/core/docker/docker-compose.yml" />
+    <entry file="file://$PROJECT_DIR$/core/docker/docker-compose.dev.yml" />
+    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile1" />
+    <entry file="file://$PROJECT_DIR$/core/docker/up.sh" />
+    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile2" />
+    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile3" />
+    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/core/docker/control/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="270">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/docker-compose.dev.yml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/ReplicationStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="12" />
+        <state>
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile1">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/38bc39b0677b208aeacbdc2d30e8499663687373/lombok-1.16.22-sources.jar!/lombok/extern/slf4j/Slf4j.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="311" lean-forward="false" selection-start-line="4" selection-start-column="311" selection-end-line="4" selection-end-column="311" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/up.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/node/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="400" lean-forward="false" selection-start-line="3" selection-start-column="400" selection-end-line="3" selection-end-column="400" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure-test/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/docker/control/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="76" column="28" lean-forward="false" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
-          <folding />
+        <state>
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clojure-test/src/clojure_test/core.clj">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure-test/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/ReplicatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/ReplicaClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/wal/WalReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/TwoPhaseCommitStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2184">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/Replicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/replication/BestEffortReplicationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
-            <element signature="e#0#862#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/MasterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/service/KVService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/model/Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/house/store/InMemoryStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
           </folding>
         </state>
       </provider>
