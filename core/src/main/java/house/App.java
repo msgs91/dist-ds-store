@@ -26,9 +26,9 @@ public class App {
     ReplicationStrategy replicationStrategy = getReplicationStrategy(config, replicator, store);
     KVService service = new KVService(config, replicator, replicationStrategy, store);
     service.start();
-    KVApplication schemaRegistryApplication = new KVApplication(service);
+    KVApplication kvApplication = new KVApplication(service);
     
-    Server server = JettyHttpContainerFactory.createServer(baseUri, schemaRegistryApplication);
+    Server server = JettyHttpContainerFactory.createServer(baseUri, kvApplication);
     
     Runtime.getRuntime().addShutdownHook(new Thread(() -> {
       log.info("Shutting down");
